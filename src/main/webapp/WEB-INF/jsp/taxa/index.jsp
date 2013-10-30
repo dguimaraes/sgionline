@@ -1,5 +1,5 @@
 <head>
-	<title><fmt:message key="lista" /> de <fmt:message key="taxa" />s</title>
+	<title><fmt:message key="lista" /> de <fmt:message key="taxas" /></title>
 </head>
 <body>
 	<div class="span5">

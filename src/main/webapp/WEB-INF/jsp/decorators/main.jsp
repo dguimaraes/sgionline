@@ -18,22 +18,21 @@
 		<header class="headerPrincipal">
 			<div class="limite">
 				<h1 class="serviceName">
-					<a href="${pageContext.request.contextPath}">Sistema de
-						Gerenciamento de Imoveis - Online</a>
+					<a href="${pageContext.request.contextPath}"><fmt:message key="sgionline"/></a>
 				</h1>
 			</div>
 		
 			<menu id="menuPrincipal">
 				<ul>
 					<li class="selected"><a
-						href="${pageContext.request.contextPath}">Página inicial</a></li>
-					<li class="parent"><a href="#" tabindex="2" role="menuitem">Cadastros</a>
+						href="${pageContext.request.contextPath}"><fmt:message key="pagina_inicial" /></a></li>
+					<li class="parent"><a href="#" tabindex="2" role="menuitem"><fmt:message key="cadastros" /></a>
 						<ul aria-expanded="false" aria-hidden="true">
-							<li><a href="${pageContext.request.contextPath}/taxas"
-								tabindex="2" role="menuitem">Taxas</a></li>
-							<li><a href="#" tabindex="2" role="menuitem">Imovéis</a></li>
-							<li><a href="#" tabindex="2" role="menuitem">Usuário</a></li>
-							<li><a href="#" tabindex="2" role="menuitem">Locatário</a></li>
+							<li><a href="${pageContext.request.contextPath}/taxas" tabindex="2" role="menuitem"><fmt:message key="taxas" /></a></li>
+							<li><a href="${pageContext.request.contextPath}/tipoImoveis" tabindex="2" role="menuitem"><fmt:message key="tipoImovel" /></a></li>
+							<li><a href="${pageContext.request.contextPath}/imoveis" tabindex="2" role="menuitem"><fmt:message key="imoveis" /></a></li>
+							<li><a href="${pageContext.request.contextPath}/usuarios" tabindex="2" role="menuitem"><fmt:message key="usuarios" /></a></li>
+							<li><a href="${pageContext.request.contextPath}/locatarios" tabindex="2" role="menuitem"><fmt:message key="locatario" /></a></li>
 						</ul></li>
 					<li><a href="#settings">Meios de pagamento</a></li>
 					<li class="btMenu"><a href="#">Ambiente de testes</a></li>
@@ -85,7 +84,7 @@
 				</div>
 				<div class="subfooter">
 					<div class="limit">
-						<span class="lastAccess"><strong>Último acesso:</strong>
+						<span class="lastAccess"><strong>�ltimo acesso:</strong>
 							7/8/2011 22:35:49 <strong>IP:</strong> 201.87.65.217 </span>
 		
 						<p class="copyRight fright">Copyright © 1997-2011 Locaweb

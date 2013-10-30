@@ -4,10 +4,14 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
-@SuppressWarnings("serial")
 @javax.persistence.Entity
 public class Taxa extends Entity {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3570758155727419901L;
+
 	@NotNull
 	@Length(max=120)
 	private String nome;

@@ -57,14 +57,14 @@ public class TaxaController {
 	}
 	
 	@Get("/taxas/{taxa.id}/edit")
-	@BreadcrumbCheck(label="taxa.edit", level=1)
+	@BreadcrumbCheck(label="taxa.edit", level=3)
 	public Taxa edit(Taxa taxa) {
 		
 		return repository.find(taxa.getId());
 	}
 
 	@Get("/taxas/{taxa.id}")
-	@BreadcrumbCheck(label="taxa.show", level=1)
+	@BreadcrumbCheck(label="taxa.show", level=2)
 	public Taxa show(Taxa taxa) {
 		return repository.find(taxa.getId());
 	}

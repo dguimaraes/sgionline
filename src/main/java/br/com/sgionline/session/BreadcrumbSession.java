@@ -29,13 +29,13 @@ public class BreadcrumbSession {
 		while (it.hasNext()) {
 			BreadcrumbBean bean = (BreadcrumbBean) it.next();
 			
+			if(bean.equals(breadcrumbBean)){
+				remove = true;
+			}
+			
 			if(remove || (breadcrumbBean.getLevel() <= bean.getLevel()))
 				it.remove();
 			
-			if(bean.equals(breadcrumbBean)){
-				it.remove();
-				remove = true;
-			}
 		}
 		
 		listaUrls.offerLast(breadcrumbBean);
